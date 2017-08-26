@@ -1,6 +1,0 @@
-framework module LDSetTableViewController {
-  umbrella header "LDSetTableViewController-umbrella.h"
-
-  export *
-  module * { export * }
-}
