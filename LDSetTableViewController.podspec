@@ -29,11 +29,34 @@ LDSetTableViewController快速创建设置界面
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-    s.dependency 'SDWebImage'
-    s.dependency 'Masonry'
 
-  s.source_files = 'LDSetTableViewController/Classes/**/*'
-  
+#s.source_files = 'LDSetTableViewController/Classes/**/*'
+#s.dependency 'SDWebImage'
+#s.dependency 'Masonry'
+
+    s.subspec 'Category' do |ca|
+        ca.source_files = 'LDSetTableViewController/Classes/Category/**/*'
+    end
+
+    s.subspec 'Controller' do |c|
+        c.source_files = 'LDSetTableViewController/Classes/Controller/**/*'
+    end
+
+    s.subspec 'Model' do |m|
+        m.source_files = 'LDSetTableViewController/Classes/Model/**/*'
+    end
+
+    s.subspec 'Other' do |o|
+        o.source_files = 'LDSetTableViewController/Classes/Other/**/*'
+    end
+
+    s.subspec 'View' do |v|
+        v.source_files = 'LDSetTableViewController/Classes/View/**/*'
+        v.dependency 'SDWebImage'
+        v.dependency 'Masonry'
+    end
+
+
   # s.resource_bundles = {
   #   'LDSetTableViewController' => ['LDSetTableViewController/Assets/*.png']
   # }
