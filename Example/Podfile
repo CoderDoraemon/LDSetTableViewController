@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LDSetTableViewController_Example' do
+  pod 'LDSetTableViewController', :path => '../'
+
+  target 'LDSetTableViewController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

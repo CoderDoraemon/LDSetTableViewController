@@ -1,0 +1,16 @@
+PODS:
+  - LDSetTableViewController (0.1.0)
+
+DEPENDENCIES:
+  - LDSetTableViewController (from `../`)
+
+EXTERNAL SOURCES:
+  LDSetTableViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LDSetTableViewController: de622c993cded9c8034da930eaa140c3e6bc6620
+
+PODFILE CHECKSUM: 9aa4fcfb46f7fe09b00fcab8e57b9876c6f40382
+
+COCOAPODS: 1.2.1
